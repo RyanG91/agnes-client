@@ -5,7 +5,7 @@ import Modal from 'react-modal'
 import ShiftModal from './ShiftModal'
 import '../../../stylesheets/Shift.css'
 
-const api = 'http://localhost:4000'
+const api = 'https://agnes-server.herokuapp.com'
 
 
 const customStyles = {
@@ -206,8 +206,8 @@ class Shift extends Component {
       let finish = event.target.finish.value
       start = this.formatTime_UserInputToDateObj(start, 'start')
       finish = this.formatTime_UserInputToDateObj(finish, 'finish')
-      
-      
+
+
 //       if (shiftCategory && start && finish) {
 //         let shiftCheck = this.props.checkShiftTimes(start, finish, this.state.date, false, false)
 
@@ -220,9 +220,9 @@ class Shift extends Component {
         this.setNightShift(event, start, finish, shiftCategory, true, sunday)
         //STOP ADD??
       } else if (shiftCategory && start && finish) {
-          
+
         let shiftCheck = this.props.checkShiftTimes(start, finish, this.state.date, false, false)
-        
+
         if (shiftCheck) {
           let shiftObj =  {
             staffID: this.state.staffID,
@@ -425,7 +425,7 @@ class Shift extends Component {
           </React.Fragment>
       )
     }
-    
+
     else {
       return (
         <React.Fragment>

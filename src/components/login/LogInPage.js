@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-const api = 'http://localhost:4000'
+const api = 'https://agnes-server.herokuapp.com'
 
 class LogInPage extends Component {
 

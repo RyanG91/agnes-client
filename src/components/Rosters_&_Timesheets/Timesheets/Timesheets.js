@@ -228,7 +228,7 @@ class Timesheets extends Component {
 
   postTimesheetTime = async (staffID, shiftDate, shiftNumber, startOrFinish, time, shiftID) => {
     console.log('postTimesheetTime...', this.state.weekID)
-    const server = 'http://localhost:4000'
+    const server = 'https://agnes-server.herokuapp.com'
     let timeObj =   {
                       weekID: this.state.weekID,
                       staffID: staffID,
@@ -246,7 +246,7 @@ class Timesheets extends Component {
 
   postFlag = (shiftID, startOrFinish, staffID, shiftDate, rostered, actual) => {
     // console.log('postFlag...', )
-    const server = 'http://localhost:4000'
+    const server = 'https://agnes-server.herokuapp.com'
 
     let flagObj =  {
                       weekID: this.state.weekID,

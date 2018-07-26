@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 
-const api = 'http://localhost:4000'
+const api = 'https://agnes-server.herokuapp.com'
 
 class CatCell extends React.Component {
   constructor(props) {
@@ -42,7 +42,7 @@ class CatCell extends React.Component {
       })
     }
   }
-  
+
   componentDidUpdate = (prevProps, prevState) => {
     if (prevState.data.hoursWorked !== this.state.data.hoursWorked) {
       axios.put(api + `/standardHours/${this.props.standardID}`, this.state.data).then((response) => {
@@ -50,7 +50,7 @@ class CatCell extends React.Component {
       })
     }
   }
-  
+
   render() {
     if (this.state.clicked) {
       return (
@@ -68,7 +68,7 @@ class CatCell extends React.Component {
           <p id="standardInput" >{this.state.data.hoursWorked}</p>
         </div>
       )
-    }  
+    }
   }
 }
 

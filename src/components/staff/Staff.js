@@ -23,7 +23,7 @@ const customStyles = {
   }
 };
 
-const api = 'http://localhost:4000'
+const api = 'https://agnes-server.herokuapp.com'
 
 class Staff extends Component {
   constructor() {

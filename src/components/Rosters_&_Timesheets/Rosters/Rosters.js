@@ -15,7 +15,7 @@ class Rosters extends Component {
   }
 
   fetchFlagsData = () => {
-    const server = 'http://localhost:4000'
+    const server = 'https://agnes-server.herokuapp.com'
 
     axios.get(server + '/flags').then(response => {
       this.setState({

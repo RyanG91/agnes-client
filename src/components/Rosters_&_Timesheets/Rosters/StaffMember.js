@@ -3,7 +3,7 @@ import Day from './Day'
 import axios from 'axios'
 import '../../../stylesheets/StaffMember.css'
 
-const api = 'http://localhost:4000'
+const api = 'https://agnes-server.herokuapp.com'
 
 class StaffMember extends Component {
   state = {

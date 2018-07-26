@@ -56,7 +56,7 @@ class Value extends Component {
   postTimesheetTime = async (lable, e) => {
     e.preventDefault()
 
-    const server = 'http://localhost:4000'
+    const server = 'https://agnes-server.herokuapp.com'
 
     await this.setState({ value: this.formatTime_UserInputToDateObj(this.state.value) })
 

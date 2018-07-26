@@ -105,7 +105,7 @@ class Flag extends Component {
   }
 
   removeFlag = async (e) => {
-    const server = 'http://localhost:4000'
+    const server = 'https://agnes-server.herokuapp.com'
 
     let flagID = this.state.flagID
     await axios.delete(server + '/flags/remove/' + flagID).then((response) => {

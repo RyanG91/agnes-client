@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import axios from 'axios'
 
-const api = 'http://localhost:4000/users'
+const api = 'https://agnes-server.herokuapp.com'
 
 const customStyles = {
   content : {
@@ -70,7 +70,7 @@ class NewUserModal extends React.Component {
           <button type='submit' >Submit</button>
         </form>
       </div>
-    ) 
+    )
   }
   }
 }
