@@ -9,7 +9,7 @@ import Staff from './components/staff/Staff'
 // import StaffHeader from './components/staff/Header'
 import './stylesheets/App.css';
 
-const api = 'http://localhost:4000/'
+const api = 'https://agnes-server.herokuapp.com/'
 
 class App extends Component {
   constructor(props) {
